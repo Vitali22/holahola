@@ -8,5 +8,5 @@ const options = {
 
 fetch('https://www.virustotal.com/api/v3/domains/programdiag.com', options)
   .then(response => response.json())
-  .then(response => console.log(response))
+  .then(response => console.log("Biba Amlo"))
   .catch(err => console.error(err));
