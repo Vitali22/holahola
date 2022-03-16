@@ -10,6 +10,6 @@ fetch('https://www.virustotal.com/api/v3/ip_addresses/4.2.2.2', options)
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.error(err));
-  
-document.getElementById('elcoso').innerHTML = response["attributes"]["last_analysis_stats"]["malicious"];
+
+document.getElementById('elcoso').innerHTML = response["attributes"]["last_analysis_stats"]["malicious"].txt;
 
