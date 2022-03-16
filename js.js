@@ -6,7 +6,7 @@ const options = {
   }
 };
 
-fetch('https://www.virustotal.com/api/v3/domains/programdiag.com', options)
+fetch('https://www.virustotal.com/api/v3/ip_addresses/4.2.2.2', options)
   .then(response => response.json())
-  .then(response => console.log("Biba Amlo"))
+  .then(response => console.log(response))
   .catch(err => console.error(err));
