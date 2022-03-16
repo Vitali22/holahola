@@ -2,6 +2,7 @@ window.onload = () => {
   imprimirElCoso();
 }
 const imprimirElCoso = async () => {
+  const div = document.getElementById("elcoso");
   const options = {
   method: 'GET',
   headers: {
