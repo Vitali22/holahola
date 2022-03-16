@@ -1,13 +1,12 @@
-<?php
-require_once('vendor/autoload.php');
+import requests
 
-$client = new \GuzzleHttp\Client();
+url = "https://www.virustotal.com/api/v3/domains/programdiag.com"
 
-$response = $client->request('GET', 'https://www.virustotal.com/api/v3/ip_addresses/4.2.2.2', [
-  'headers' => [
-    'Accept' => 'application/json',
-    'x-apikey' => '167a543753285376fa59206b24a4ee524b39926295db48458478364d017bd9dd',
-  ],
-]);
+headers = {
+    "Accept": "application/json",
+    "x-apikey": "167a543753285376fa59206b24a4ee524b39926295db48458478364d017bd9dd"
+}
 
-echo $response->getBody();
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
