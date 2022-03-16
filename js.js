@@ -8,4 +8,5 @@ const options = {
 
 fetch('https://www.virustotal.com/api/v3/domains/programdiag.com', options)
   .then(response => response.json())
-console.log(response)
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
